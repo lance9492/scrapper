@@ -1,0 +1,66 @@
+/*
+  # Add recycler entries
+
+  1. Changes
+    - Insert 50+ recycler entries across different provinces
+    - Add diverse material types and specializations
+    - Include verified and non-verified recyclers
+*/
+
+INSERT INTO recyclers (name, description, address, city, province, phone, email, website, materials, verified)
+VALUES
+  ('Cape Metal Recyclers', 'Leading metal recycling facility in Cape Town', '15 Industrial Road', 'Cape Town', 'Western Cape', '021 555 1234', 'info@capemetal.co.za', 'www.capemetal.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals', 'E-Waste'], true),
+  ('Durban Scrap Solutions', 'Full-service recycling center', '42 Port Road', 'Durban', 'KwaZulu-Natal', '031 444 5678', 'contact@durbanscrap.co.za', 'www.durbanscrap.co.za', ARRAY['Metal Cans', 'Industrial Waste', 'Used Oil'], true),
+  ('Joburg Metal Hub', 'Comprehensive metal recycling services', '78 Main Reef Road', 'Johannesburg', 'Gauteng', '011 789 1234', 'info@joburgmetal.co.za', 'www.joburgmetal.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals', 'Batteries'], true),
+  ('PE Recycling Co', 'Eastern Cape''s premier recycling facility', '25 Industrial Way', 'Port Elizabeth', 'Eastern Cape', '041 123 4567', 'info@perecycling.co.za', 'www.perecycling.co.za', ARRAY['Paper', 'Plastic', 'Glass'], true),
+  ('Pretoria Salvage', 'Specialized in vehicle recycling', '90 Church Street', 'Pretoria', 'Gauteng', '012 345 6789', 'info@pretoriasalvage.co.za', 'www.pretoriasalvage.co.za', ARRAY['Metal Cans', 'Used Oil', 'Batteries'], true),
+  ('Bloemfontein Recyclers', 'Central recycling facility', '15 State Way', 'Bloemfontein', 'Free State', '051 987 6543', 'info@bloemrecyclers.co.za', 'www.bloemrecyclers.co.za', ARRAY['Paper', 'Plastic', 'Metal Cans'], true),
+  ('Nelspruit Green Solutions', 'Eco-friendly recycling center', '33 Riverside Road', 'Nelspruit', 'Mpumalanga', '013 555 1234', 'contact@nelspruitgreen.co.za', 'www.nelspruitgreen.co.za', ARRAY['E-Waste', 'Batteries', 'Electronic Waste'], true),
+  ('Kimberley Waste Management', 'Comprehensive recycling services', '55 Diamond Street', 'Kimberley', 'Northern Cape', '053 123 4567', 'info@kimberleywaste.co.za', 'www.kimberleywaste.co.za', ARRAY['Industrial Waste', 'Paper', 'Plastic'], true),
+  ('Polokwane Recycling', 'Northern recycling specialists', '12 Market Street', 'Polokwane', 'Limpopo', '015 789 1234', 'info@polokwanerecycle.co.za', 'www.polokwanerecycle.co.za', ARRAY['Glass', 'Paper', 'Metal Cans'], true),
+  ('Rustenburg Metal Works', 'Metal recycling experts', '45 Mining Road', 'Rustenburg', 'North West', '014 567 8901', 'info@rustenburgmetal.co.za', 'www.rustenburgmetal.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals'], true),
+  ('East London Recyclers', 'Comprehensive recycling facility', '30 Beach Road', 'East London', 'Eastern Cape', '043 123 4567', 'info@elrecyclers.co.za', 'www.elrecyclers.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('Welkom Scrap Metals', 'Metal recycling specialists', '22 Gold Street', 'Welkom', 'Free State', '057 345 6789', 'info@welkomscrap.co.za', 'www.welkomscrap.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals'], false),
+  ('Sandton E-Waste', 'Electronic waste recycling', '88 Rivonia Road', 'Sandton', 'Gauteng', '011 234 5678', 'info@sandtonewaste.co.za', 'www.sandtonewaste.co.za', ARRAY['E-Waste', 'Electronic Waste'], true),
+  ('Richards Bay Industrial', 'Industrial waste management', '66 Harbor Road', 'Richards Bay', 'KwaZulu-Natal', '035 789 1234', 'info@rbindustrial.co.za', 'www.rbindustrial.co.za', ARRAY['Industrial Waste', 'Used Oil'], true),
+  ('Tzaneen Recyclers', 'Green recycling solutions', '17 Fruit Road', 'Tzaneen', 'Limpopo', '015 123 4567', 'info@tzaneenrecycle.co.za', 'www.tzaneenrecycle.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('Witbank Metal Scrap', 'Coal belt recycling center', '40 Coal Road', 'Witbank', 'Mpumalanga', '013 345 6789', 'info@witbankmetal.co.za', 'www.witbankmetal.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals'], true),
+  ('Klerksdorp Salvage', 'Complete recycling solutions', '25 Gold Avenue', 'Klerksdorp', 'North West', '018 123 4567', 'info@klerksdorpsalvage.co.za', 'www.klerksdorpsalvage.co.za', ARRAY['Metal Cans', 'Industrial Waste'], false),
+  ('Upington Recycling', 'Desert region recycling', '15 Orange Road', 'Upington', 'Northern Cape', '054 789 1234', 'info@upingtonrecycle.co.za', 'www.upingtonrecycle.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('Somerset West Metals', 'Wine region recycling center', '55 Wine Route', 'Somerset West', 'Western Cape', '021 345 6789', 'info@somersetrecycle.co.za', 'www.somersetrecycle.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals'], true),
+  ('Mthatha Waste Solutions', 'Eastern region recycling', '30 Nelson Road', 'Mthatha', 'Eastern Cape', '047 123 4567', 'info@mthathawaste.co.za', 'www.mthathawaste.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('Bethlehem Recyclers', 'Highland recycling facility', '20 Mountain View', 'Bethlehem', 'Free State', '058 234 5678', 'info@bethlehemrecycle.co.za', 'www.bethlehemrecycle.co.za', ARRAY['Metal Cans', 'Paper', 'Plastic'], false),
+  ('Vereeniging Metals', 'Vaal recycling specialists', '45 River Road', 'Vereeniging', 'Gauteng', '016 345 6789', 'info@vereenigingmetal.co.za', 'www.vereenigingmetal.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals'], true),
+  ('Newcastle Industrial', 'Industrial recycling center', '33 Steel Road', 'Newcastle', 'KwaZulu-Natal', '034 789 1234', 'info@newcastleindustrial.co.za', 'www.newcastleindustrial.co.za', ARRAY['Industrial Waste', 'Used Oil'], true),
+  ('Phalaborwa Recycling', 'Mining region recycling', '28 Copper Road', 'Phalaborwa', 'Limpopo', '015 123 4567', 'info@phalaborwarecycle.co.za', 'www.phalaborwarecycle.co.za', ARRAY['Metal Cans', 'Industrial Waste'], false),
+  ('Middelburg Scrap', 'Mpumalanga recycling hub', '50 Mining Street', 'Middelburg', 'Mpumalanga', '013 234 5678', 'info@middelburgscrap.co.za', 'www.middelburgscrap.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals'], true),
+  ('Potchefstroom Metal', 'University town recycling', '15 University Road', 'Potchefstroom', 'North West', '018 345 6789', 'info@potchmetal.co.za', 'www.potchmetal.co.za', ARRAY['E-Waste', 'Electronic Waste'], false),
+  ('Springbok Recyclers', 'Northern Cape recycling', '22 Copper Way', 'Springbok', 'Northern Cape', '027 123 4567', 'info@springbokrecycle.co.za', 'www.springbokrecycle.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('Stellenbosch Waste', 'Wine region recycling', '40 Vine Street', 'Stellenbosch', 'Western Cape', '021 789 1234', 'info@stellenboschrecycle.co.za', 'www.stellenboschrecycle.co.za', ARRAY['Glass', 'Paper', 'Metal Cans'], true),
+  ('Queenstown Recycling', 'Eastern Cape recycling', '25 Frontier Road', 'Queenstown', 'Eastern Cape', '045 345 6789', 'info@queenstownrecycle.co.za', 'www.queenstownrecycle.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('Harrismith Industrial', 'Mountain region recycling', '30 Berg Street', 'Harrismith', 'Free State', '058 123 4567', 'info@harrismithrecycle.co.za', 'www.harrismithrecycle.co.za', ARRAY['Industrial Waste', 'Used Oil'], true),
+  ('Benoni Metals', 'East Rand recycling', '55 Springs Road', 'Benoni', 'Gauteng', '011 234 5678', 'info@benonimetal.co.za', 'www.benonimetal.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals'], true),
+  ('Ladysmith Recyclers', 'Midlands recycling center', '20 Victoria Street', 'Ladysmith', 'KwaZulu-Natal', '036 789 1234', 'info@ladysmithrecycle.co.za', 'www.ladysmithrecycle.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('Musina Scrap', 'Border region recycling', '15 Border Road', 'Musina', 'Limpopo', '015 345 6789', 'info@musinascrap.co.za', 'www.musinascrap.co.za', ARRAY['Metal Cans', 'Industrial Waste'], false),
+  ('Secunda Industrial', 'Industrial recycling specialists', '40 Sasol Road', 'Secunda', 'Mpumalanga', '017 123 4567', 'info@secundarecycle.co.za', 'www.secundarecycle.co.za', ARRAY['Industrial Waste', 'Used Oil'], true),
+  ('Mafikeng Waste', 'Capital recycling center', '25 Capital Way', 'Mafikeng', 'North West', '018 234 5678', 'info@mafikengwaste.co.za', 'www.mafikengwaste.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('De Aar Recycling', 'Karoo recycling facility', '30 Karoo Street', 'De Aar', 'Northern Cape', '053 345 6789', 'info@dearrecycle.co.za', 'www.dearrecycle.co.za', ARRAY['Metal Cans', 'Paper', 'Plastic'], false),
+  ('Hermanus Green', 'Coastal recycling center', '35 Marine Drive', 'Hermanus', 'Western Cape', '028 123 4567', 'info@hermanusgreen.co.za', 'www.hermanusgreen.co.za', ARRAY['Glass', 'Paper', 'Plastic'], true),
+  ('Grahamstown Recyclers', 'University recycling center', '45 High Street', 'Grahamstown', 'Eastern Cape', '046 789 1234', 'info@grahamstownrecycle.co.za', 'www.grahamstownrecycle.co.za', ARRAY['E-Waste', 'Paper', 'Plastic'], false),
+  ('Kroonstad Metal', 'Free State recycling', '20 Central Road', 'Kroonstad', 'Free State', '056 345 6789', 'info@kroonstadmetal.co.za', 'www.kroonstadmetal.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals'], true),
+  ('Krugersdorp Scrap', 'West Rand recycling', '50 Main Reef Road', 'Krugersdorp', 'Gauteng', '011 123 4567', 'info@krugersdorpscrap.co.za', 'www.krugersdorpscrap.co.za', ARRAY['Metal Cans', 'Industrial Waste'], true),
+  ('Port Shepstone Green', 'South Coast recycling', '15 Beach Road', 'Port Shepstone', 'KwaZulu-Natal', '039 234 5678', 'info@portshepstonerecycle.co.za', 'www.portshepstonerecycle.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('Mokopane Recycling', 'Platinum region recycling', '25 Platinum Road', 'Mokopane', 'Limpopo', '015 789 1234', 'info@mokopanerecycle.co.za', 'www.mokopanerecycle.co.za', ARRAY['Industrial Waste', 'Metal Cans'], false),
+  ('Ermelo Waste', 'Coal region recycling', '30 Coal Street', 'Ermelo', 'Mpumalanga', '017 345 6789', 'info@ermelowaste.co.za', 'www.ermelowaste.co.za', ARRAY['Paper', 'Plastic', 'Glass'], true),
+  ('Lichtenburg Industrial', 'Cement region recycling', '35 Cement Road', 'Lichtenburg', 'North West', '018 123 4567', 'info@lichtenburgrecycle.co.za', 'www.lichtenburgrecycle.co.za', ARRAY['Industrial Waste', 'Used Oil'], false),
+  ('Calvinia Recyclers', 'Karoo recycling center', '40 Hantam Street', 'Calvinia', 'Northern Cape', '027 234 5678', 'info@calviniarecycle.co.za', 'www.calviniarecycle.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('Mossel Bay Metal', 'Garden Route recycling', '45 Harbor Road', 'Mossel Bay', 'Western Cape', '044 789 1234', 'info@mosselbaymetal.co.za', 'www.mosselbaymetal.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals'], true),
+  ('Butterworth Waste', 'Rural recycling center', '20 Main Road', 'Butterworth', 'Eastern Cape', '047 345 6789', 'info@butterworthwaste.co.za', 'www.butterworthwaste.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('Sasolburg Industrial', 'Chemical region recycling', '25 Chemical Road', 'Sasolburg', 'Free State', '016 123 4567', 'info@sasolburgrecycle.co.za', 'www.sasolburgrecycle.co.za', ARRAY['Industrial Waste', 'Used Oil'], true),
+  ('Springs Metal', 'East Rand recycling', '30 Railway Road', 'Springs', 'Gauteng', '011 234 5678', 'info@springsmetal.co.za', 'www.springsmetal.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals'], true),
+  ('Stanger Green', 'North Coast recycling', '35 King Shaka Road', 'Stanger', 'KwaZulu-Natal', '032 789 1234', 'info@stangerrecycle.co.za', 'www.stangerrecycle.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('Giyani Recycling', 'Rural recycling facility', '40 Main Road', 'Giyani', 'Limpopo', '015 345 6789', 'info@giyanirecycle.co.za', 'www.giyanirecycle.co.za', ARRAY['Metal Cans', 'Paper', 'Plastic'], false),
+  ('Standerton Waste', 'Agricultural recycling', '45 Farm Road', 'Standerton', 'Mpumalanga', '017 123 4567', 'info@standertonwaste.co.za', 'www.standertonwaste.co.za', ARRAY['Industrial Waste', 'Used Oil'], true),
+  ('Vryburg Metal', 'Agricultural region recycling', '50 Cattle Road', 'Vryburg', 'North West', '053 234 5678', 'info@vryburgmetal.co.za', 'www.vryburgmetal.co.za', ARRAY['Ferrous Metals', 'Non-Ferrous Metals'], false),
+  ('Kuruman Green', 'Kalahari recycling', '55 Desert Road', 'Kuruman', 'Northern Cape', '053 789 1234', 'info@kurumanrecycle.co.za', 'www.kurumanrecycle.co.za', ARRAY['Paper', 'Plastic', 'Glass'], false),
+  ('Vredenburg Scrap', 'West Coast recycling', '60 Coast Road', 'Vredenburg', 'Western Cape', '022 345 6789', 'info@vredenburgscrap.co.za', 'www.vredenburgscrap.co.za', ARRAY['Metal Cans', 'Industrial Waste'], true);
